@@ -1,30 +1,31 @@
-富士山「動物交通事故死」マップ
+基于Cesium的古村镇三维展示
 ======================
-富士山麓で起きた野生動物の交通事故の場所と動物の種類のマップです。[富士山アウトドアミュージアム](https://www.facebook.com/fom3776)が収集したデータを元に、[首都大学東京渡邉英徳研究室](http://labo.wtnv.jp)がコンテンツを制作しました。
+由于Cesium框架本质上是JavaScript库，所以要在本地运行Cesium首先需要部署运行环境。
 
-首都大学東京の授業教材として用いている以下のリポジトリを元にしています。
+Cesium官方推荐的服务环境是Node.js部署的，所以首先需下载Node.js
 
-+ [Cesiumを使ったKML可視化のサンプル](https://github.com/wtnv-lab/cesiumGitHubPages "Cesiumを使ったKML可視化のサンプル")
+下载地址：https://nodejs.org/en/
 
-KmlDataSourceをCzmlDataSourceに変更するなどの改造を施しています。ご興味のあるかたは参考リンクの[Cesium](http://cesiumjs.org/ "Cesium")にあるリファレンスをご覧ください。
+下载完后直接安装，安装过程比较简单，就下一步下一步就行
 
-### 使い方
+该系统已经npm所需的组件，就不需要再用Node.js npm install了，不过需要注意的是我上传的文件有两个压缩包，需要解压。安装好Node.js后,切换到
 
-視点移動、ジオコーディング、ImageryLayerの切り替え、ストリートビュー起動、ヘルプ起動の各機能が実装されています。
+本文件夹根目
 
-+ 視点移動・GitHubへのリンク：左上のメニューボタン
-+ ジオコーディング：左上のフォーム
-+ レイヤ切り替え：右上のパラメータボタン
-+ ヘルプ起動：右上の「？」ボタン
+录下，双击startCesium.bat文件即可部署运行环境。该系统本地默认端口为8080，所以在浏览器中直接输
 
-### 参考リンク
+入 localhost:8080即可
 
-1. [公式ウェブサイト](http://animal.mapping.jp/ "富士山「動物交通事故死」マップ")
-2. [GitHub Pagesでの閲覧](http://hwtnv.github.io/cesiumGitHubPages/ "富士山「動物交通事故死」マップ")
-3. [Cesium](http://cesiumjs.org/ "Cesium")
+该系统参考了“富士山「動物交通事故死」マップ”的项目，在此基础上做了修改，添加了百度街景。
 
-### ライセンス
+百度街景需要秘钥，可以自己去百度开发者中去申请
 
-首都大学東京 渡邉英徳研究室✕富士山アウトドアミュージアム 作『富士山「動物交通事故死」マップ』はクリエイティブ・コモンズ 表示 - 非営利 - 継承 4.0 国際 ライセンスで提供されています。
+有什么问题或者创新可以联系本人，QQ：1581273984；随时在线
 
-+ [CC BY-NC-SA 4.0](http://creativecommons.org/licenses/by-nc-sa/4.0/)
+由于开发的时间比较久了。现在API可能更新了，自己也没有去关注，所以现在地球出不来，有时间将会更新。
+
+演示效果图：
+
+
+![输入图片说明](https://git.oschina.net/uploads/images/2017/0627/193330_0d9a0697_1400811.jpeg "在这里输入图片标题")
+![输入图片说明](https://git.oschina.net/uploads/images/2017/0627/193422_e19f413f_1400811.jpeg "在这里输入图片标题")![输入图片说明](https://git.oschina.net/uploads/images/2017/0627/193435_0d863e28_1400811.jpeg "在这里输入图片标题")
