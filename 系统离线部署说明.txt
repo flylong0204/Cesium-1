@@ -1,0 +1,13 @@
+由于Cesium框架本质上是JavaScript库，所以要在本地运行Cesium首先需要部署运行环境。
+
+Cesium官方推荐的服务环境是Node.js部署的，所以首先需下载Node.js
+
+下载地址：https://nodejs.org/en/
+
+下载完后直接安装，安装过程比较简单，就下一步下一步就行
+
+该系统已经npm所需的组件，就不需要再用Node.js npm install了，安装好Node.js后,切换到本文件夹根目
+
+录下，双击startCesium.bat文件即可部署运行环境。该系统本地默认端口为8080，所以在浏览器中直接输
+
+入 localhost:8080即可
